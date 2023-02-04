@@ -5,6 +5,7 @@
 ================================================== */
 
 // hellooo todo: modify all calls to removeClass
+// this is another comment
 
 function hasClass(el, name) {
     return (el.className.length > 0) &&
