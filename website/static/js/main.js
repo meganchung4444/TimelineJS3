@@ -202,9 +202,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Device preview
     $('#device-preview-mode span').on("click", function() {
-        $("#preview-embed-iframe").removeClass();
+        // $("#preview-embed-iframe").removeClass();
+        $("#preview-embed-iframe").classList.remove();
+
         $("#preview-embed-iframe").addClass($(this).data("size"));
-        $(this).siblings().removeClass("active");
+
+        // $(this).siblings().removeClass("active");
+        $(this).siblings().classList.remove("active");
+
         $(this).addClass("active");
     });
 
