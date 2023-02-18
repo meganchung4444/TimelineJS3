@@ -202,13 +202,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Device preview
     $('#device-preview-mode span').on("click", function() {
-
-        $("#preview-embed-iframe").classList.remove();
-
+        $("#preview-embed-iframe").removeClass();
         $("#preview-embed-iframe").addClass($(this).data("size"));
-
-        $(this).siblings().classList.remove("active");
-
+        $(this).siblings().removeClass("active");
         $(this).addClass("active");
     });
 
