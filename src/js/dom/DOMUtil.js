@@ -4,7 +4,6 @@
 	Why are they in DOMUtil and not DOM? 
 ================================================== */
 
-
 function hasClass(el, name) {
     return (el.className.length > 0) &&
         new RegExp("(^|\\s)" + name + "(\\s|$)").test(el.className);
